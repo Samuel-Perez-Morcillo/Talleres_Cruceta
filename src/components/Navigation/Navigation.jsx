@@ -20,7 +20,7 @@ const Navigation = () => {
                 <img
                     src={logo} // Usa la imagen que importaste
                     alt="Logo"
-                    className={`navbar-logo ${expanded ? 'hidden-logo' : ''}`}// Añade una clase para estilos adicionales
+                    className={`navbar-logo ${expanded ? 'hidden-logo' : ''}`} // Añade una clase para estilos adicionales
                 />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler">
@@ -32,19 +32,22 @@ const Navigation = () => {
             </Navbar.Toggle>
             <Navbar.Collapse id="basic-navbar-nav" className="custom-collapse">
                 <Nav className="nav-links">
-                    <Link to="/">
-                        <Navbar.Brand className="nav-item">Inicio</Navbar.Brand>
+
+                    <Link to="/" >
+                        <Navbar.Brand className="nav-item" style={outline = none}>Inicio</Navbar.Brand>
                     </Link>
+
                     <Link to="/acerca-de">
                         <Navbar.Brand className="nav-item">Acerca de</Navbar.Brand>
                     </Link>
+
                     <Link to="/contacto">
                         <Navbar.Brand className="nav-item">Contacto</Navbar.Brand>
-
                     </Link>
+
                 </Nav>
             </Navbar.Collapse>
-        </Navbar>
+        </Navbar >
     );
 };
 

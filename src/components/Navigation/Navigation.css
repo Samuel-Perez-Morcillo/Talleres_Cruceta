@@ -93,9 +93,7 @@ La tercera barra (.bar:nth-child(3)) se rota -45 grados y también se traslada, 
 
 .hidden-logo {
     opacity: 0;
-    /* Oculta el logo cuando la navbar se despliega */
     visibility: hidden;
-    /* Estilos para el menú colapsado */
 
 }
 
@@ -109,6 +107,11 @@ La tercera barra (.bar:nth-child(3)) se rota -45 grados y también se traslada, 
 
 .nav-links {
     text-align: center;
+    outline: none;
+}
+
+.span.nav-item.navbar-brand {
+    outline: none;
 }
 
 .nav-item {
@@ -118,10 +121,16 @@ La tercera barra (.bar:nth-child(3)) se rota -45 grados y también se traslada, 
     margin: 1.5rem;
     position: relative;
     transition: color 0.3s ease-in-out;
+    outline: none;
+}
+
+.nav-item:focus {
+    outline: none;
 }
 
 .nav-item:hover {
     color: #ff7f50;
     /* Color de hover (coral) */
     transition: color 0.3s ease-in-out;
+    outline: none;
 }
