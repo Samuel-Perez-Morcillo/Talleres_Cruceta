@@ -18,9 +18,9 @@ const Navigation = () => {
         >
             <Navbar.Brand href="#home" >
                 <img
-                    src={logo} // Usa la imagen que importaste
+                    src={logo}
                     alt="Logo"
-                    className={`navbar-logo ${expanded ? 'hidden-logo' : ''}`} // Añade una clase para estilos adicionales
+                    className={`navbar-logo ${expanded ? 'hidden-logo' : ''}`}
                 />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler">
@@ -38,7 +38,7 @@ const Navigation = () => {
                     </Link>
 
                     <Link to="/acerca-de">
-                        <Navbar.Brand className="nav-item">Acerca de</Navbar.Brand>
+                        <Navbar.Brand className="nav-item">Sobre Nosotros</Navbar.Brand>
                     </Link>
 
                     <Link to="/contacto">
