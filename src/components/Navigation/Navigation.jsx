@@ -34,7 +34,7 @@ const Navigation = () => {
                 <Nav className="nav-links">
 
                     <Link to="/" >
-                        <Navbar.Brand className="nav-item" style={outline = none}>Inicio</Navbar.Brand>
+                        <Navbar.Brand className="nav-item" >Inicio</Navbar.Brand>
                     </Link>
 
                     <Link to="/acerca-de">
